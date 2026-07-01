@@ -1,0 +1,65 @@
+# ============================================================================
+# Client Theme — Identidad visual aplicada a TODOS los entregables
+# ============================================================================
+# Este archivo es el único punto de configuración del cliente. Cambia los
+# valores aquí y todos los entregables (.docx, .pptx, .drawio) se regeneran
+# con la nueva paleta al ejecutar `bash build-doc.sh` y `python3 build-pptx.py`.
+#
+# Compatible con apply-theme.py (Tivit SAP Documentation Architect).
+# ============================================================================
+
+client:
+  name: "HOCOL S.A."
+  group: "Grupo Ecopetrol"
+  short_name: "HOCOL"
+
+# Paleta corporativa — todos los colores en hex sin "#" (RRGGBB)
+colors:
+  # Color institucional principal — usado en banners, headers de tabla,
+  # heading 1/2, banner superior del PPT, barras decorativas
+  primary: "00833F"
+
+  # Variante oscura del primary — usado en heading 3+, texto sobre fondos
+  # claros del color primario, énfasis
+  primary_dark: "003C1E"
+
+  # Color de acento — usado en cajas destacadas (estimación), control de
+  # cambios, segunda mitad de la barra superior, decoración portada
+  accent: "FFCD00"
+
+  # Variante oscura del accent — para texto cuando se usa accent como fondo
+  accent_dark: "E6B800"
+
+  # Tint claro del primary — filas alternas de tabla, fondos suaves
+  light: "EAF7EF"
+
+  # Tint claro del accent — fondos amarillos suaves
+  accent_light: "FFF6CC"
+
+  # Texto y muted
+  text: "2D2D2D"
+  muted: "6B6B6B"
+
+  # Bordes de tabla (variante muy clara del primary)
+  border: "C8E6D2"
+
+  # Colores semánticos (sólo se ajustan si el cliente tiene paleta semántica)
+  success: "2E7D32"
+  warning: "E68A00"
+  danger: "C62828"
+  white: "FFFFFF"
+
+fonts:
+  primary: "Calibri"
+  monospace: "Consolas"
+
+# Assets — rutas relativas a la raíz del proyecto
+logos:
+  consultora: "docs/architecture/assets/Picture_26.jpg"   # Logo del consultor (Tivit)
+  client: "docs/architecture/assets/Imagen_4.png"         # Logo del cliente (HOCOL/Ecopetrol)
+
+# Metadatos del documento
+document:
+  title: "HOCOL — Arquitectura y Estimación Workflow Reservas PM"
+  author: "Tivit — SAP Tech Lead"
+  language: "es-CO"

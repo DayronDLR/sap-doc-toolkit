@@ -1,0 +1,14 @@
+sap-doc-toolkit — NOTICE
+
+This toolkit is original work by DayronDLR, licensed MIT.
+
+NOT included (provide them yourself):
+- SAP BTP icon library (sap-btp-icons/): proprietary SAP assets, not
+  redistributable. sap-drawio-generator.py degrades gracefully without it
+  (diagrams render without SAP icons). Drop your licensed icon set into
+  sap-btp-icons/extracted-icons.json to enable them.
+- reference-base.docx: this is pandoc's default reference doc. Generate it once
+  with: pandoc --print-default-data-file reference.docx > tools/reference-base.docx
+
+Companion to the SAP Enterprise Stack Claude Code plugin:
+https://github.com/DayronDLR/sap-enterprise-stack-plugin
